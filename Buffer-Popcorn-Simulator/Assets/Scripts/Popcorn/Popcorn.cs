@@ -10,7 +10,7 @@ public class Popcorn : MonoBehaviour
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
-        upwardsForce = Random.Range(10, 15);
+        upwardsForce = Random.Range(7, 15);
         rb2d.AddForce(new Vector2(Random.Range(-2, 2), upwardsForce), ForceMode2D.Impulse);
     }
 
